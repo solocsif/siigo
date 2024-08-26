@@ -1,0 +1,421 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Secuencia" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1233,4655" sap2010:WorkflowViewState.IdRef="Secuencia_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="608,4590" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Navegador Chrome: Siigo Nube" sap:VirtualizedContainerService.HintSize="546,4502" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b4332549-0f28-422b-8722-e3e0323a0941" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="512,4262" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:RepeatNumberOfTimesX DisplayName="Repetir número de veces" sap:VirtualizedContainerService.HintSize="450,4172" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="30" StartAt="1">
+              <ui:RepeatNumberOfTimesX.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,3983" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'IMG'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/dashboard/1055" CVScreenId="da176292-d123-40b3-917c-7d36ce840b62" CvTextArea="195, 507, 185, 14" CvTextArgument="Crea una Factura Electronica" CvType="Text" DesignTimeRectangle="195, 506, 184, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='single-spa-application:react-dashboard' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='single-spa-application:react-dashboard' tag='P' type='' class='shortcut-title' aaname='Crea una Factura Electrónica' check:innerText='Crea una Factura Electrónica' /&gt;" Guid="6020f5ee-6be2-4e20-985d-0d8ffc2bfb5f" InformativeScreenshot="628630ddb3f82df3fce4fd9910b58247.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NSelectItem DisplayName="Seleccionar elemento 'Tipo Es'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="FV - 2 - FACTURA ELECTRONICA FV 2 ALMACEN" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="3">
+                          <x:String></x:String>
+                          <x:String>FV - 1 - Factura de venta No</x:String>
+                          <x:String>FV - 2 - FACTURA ELECTRONICA FV 2 ALMACEN</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="16859e61-d7c6-40c7-817c-8c42bdf8e6b0" CvElementArea="581, 480, 276, 30" CvType="InputBox" DesignTimeRectangle="584, 482, 272, 26" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='dropdown_dropdownSelect' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='dropdown_dropdownSelect' tag='SELECT' type='' class='form-control generic-control-validator' aaname='' /&gt;" Guid="6d3012f2-035b-4d37-9ec4-95252f3706c3" InformativeScreenshot="1b3e406b812566d370cb4257ad74b066.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="16859e61-d7c6-40c7-817c-8c42bdf8e6b0" CvTextArea="482, 487, 42, 16" CvTextArgument="Tipo O" CvType="Text" DesignTimeRectangle="483, 482, 86, 25" FullSelectorArgument="&lt;webctrl tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='col-sm-2 col-form-label span-form-headers' aaname='Tipo ' check:innerText='Tipo' /&gt;" Guid="dd445ced-0e0d-44f8-936a-c6851e251107" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Cliente'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Text="mag" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="16859e61-d7c6-40c7-817c-8c42bdf8e6b0" CvTextArea="588, 521, 41, 13" CvTextArgument="Buscar" CvType="Text" DesignTimeRectangle="584, 516, 272, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='autocomplete_autocompleteInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='autocomplete_autocompleteInput' tag='INPUT' type='text' class='form-control generic-control-validator read-only-bg' placeholder='Buscar' aaname='' /&gt;" Guid="92b3b8bd-ac71-4d15-82fa-aef486006366" InformativeScreenshot="9f0b6b1dc27f077f040663fa8a45c3cd.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="16859e61-d7c6-40c7-817c-8c42bdf8e6b0" CvTextArea="482, 517, 42, 13" CvTextArgument="Cliente" CvType="Text" DesignTimeRectangle="483, 516, 86, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Cliente' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Cliente' tag='SPAN' type='' class='col-sm-2 col-form-label span span-form-headers' check:innerText='Cliente' /&gt;" Guid="fb95099e-47e6-4451-af26-464592209dbe" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NGetText DisplayName="Obtener texto 'Contacto Persona'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="16859e61-d7c6-40c7-817c-8c42bdf8e6b0" CvElementArea="582, 562, 275, 29" CvType="InputBox" DesignTimeRectangle="592, 562, 157, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='ng-star-inserted' /&gt;" Guid="a2c88035-05b1-4ab1-b59e-9d99ba000f33" InformativeScreenshot="124d1b4b99e21acf970a6e2ce5429df0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="16859e61-d7c6-40c7-817c-8c42bdf8e6b0" CvTextArea="482, 568, 68, 14" CvTextArgument="Contacto O" CvType="Text" DesignTimeRectangle="483, 563, 86, 25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;invoice-root&amp;gt;div&amp;gt;div&amp;gt;invoice&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;invoice-header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='5' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col-sm-2 col-form-label span-form-headers' tag='SPAN' aaname='Contacto ' check:innerText='Contacto' /&gt;" Guid="14dc9be5-6892-4a6c-9e00-4ea36acf4acb" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'JUMP START SAS'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="e55fb9d0-9dfb-4116-9db6-755db76f2beb" CvTextArea="592, 563, 157, 13" CvTextArgument="MAGENTA ENVASES SAS" CvType="Text" DesignTimeRectangle="592, 562, 157, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='ng-star-inserted' aaname=' MAGENTA ENVASES SAS ' check:innerText='MAGENTA ENVASES SAS' /&gt;" Guid="00a62545-2af5-4801-80fc-5bb97663578e" InformativeScreenshot="068c4eb0606ca4e4289333f373665e53.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Etiqueta'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Text="bulto" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="986b59c0-5b31-43f8-b883-5262e98cb16d" CvTextArea="478, 702, 42, 13" CvTextArgument="Buscar" CvType="Text" DesignTimeRectangle="475, 697, 181, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;invoice-root&amp;gt;div&amp;gt;div&amp;gt;invoice&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;invoice-grid&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;siigo-autocomplete&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' id='autocomplete_autocompleteInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' id='autocomplete_autocompleteInput' tag='INPUT' class='form-control generic-control-validator read-only-bg' placeholder='Buscar' aaname='' /&gt;" Guid="2b084e97-3e71-4535-a1d3-919e5f769037" InformativeScreenshot="bb5a232f402469ac7b5ed31121c450dc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="986b59c0-5b31-43f8-b883-5262e98cb16d" CvTextArea="455, 695, 8, 13" CvTextArgument="1" CvType="Text" DesignTimeRectangle="449, 694, 20, 43" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' 1 ' parentid='trEditRow' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' 1 ' parentid='trEditRow' tag='DIV' type='' class='' check:innerText='1' /&gt;" Guid="c1505bb3-777f-43c5-87dc-0d48df5a1003" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Retal Lamina'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="4b4ed331-71cd-4046-8093-802593edce51" CvTextArea="539, 788, 102, 13" CvTextArgument="bulto por 25 Kilos" CvType="Text" DesignTimeRectangle="539, 787, 101, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Código Descripción Referencia de fábrica Estado' tag='TABLE' /&gt;&lt;webctrl aaname=' bulto por 25 Kilos ' tableRow='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Código Descripción Referencia de fábrica Estado' tag='TABLE' /&gt;&lt;webctrl aaname=' bulto por 25 Kilos ' type='' tag='DIV' class='ng-star-inserted' check:innerText='bulto por 25 Kilos' /&gt;" Guid="942525e0-630c-4b6c-b0a0-cb2996b924bd" InformativeScreenshot="d10a7aa4640230454f083438d6111c21.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en '1.00'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Text="4" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="986b59c0-5b31-43f8-b883-5262e98cb16d" CvElementArea="848, 694, 70, 30" CvType="InputBox" DesignTimeRectangle="852, 696, 63, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='inputDecimal_siigoInputDecimal' parentid='editQuantity' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputDecimal_siigoInputDecimal' parentid='editQuantity' tag='INPUT' type='text' class='generic-control-validator input-right dx-texteditor-input' aaname='' /&gt;" Guid="80c78e2a-41c4-4651-a258-6f3bb5e5e2b8" InformativeScreenshot="b42be0f12cfd3c6ac9c220f5d0b22fd8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'I'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="79658796-1fc2-401f-8286-dca8784728f0" CvElementArea="451, 864, 193, 29" CvType="InputBox" DesignTimeRectangle="453, 866, 190, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='editingAcAccount_autocompleteInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='editingAcAccount_autocompleteInput' tag='INPUT' type='text' class='form-control generic-control-validator read-only-bg' placeholder='Selecciona forma de pago' aaname='' /&gt;" Guid="8f8088d8-fc51-4f4b-9ecd-f45060e68d20" InformativeScreenshot="280dfd5dd84669b5c4cf67d508dff937.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="79658796-1fc2-401f-8286-dca8784728f0" CvElementArea="451, 864, 193, 29" CvType="InputBox" DesignTimeRectangle="625, 872, 8, 13" FullSelectorArgument="&lt;webctrl parentname='editingAcAccount' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='editingAcAccount' tag='I' type='' class='siigo-autocomplete-icons fa fa-caret-down ng-star-inserted' aaname='' /&gt;" Guid="4df239d2-eff3-4efd-85cc-331dfa17c3ac" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'I'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="7877f761-34c4-466f-a290-a7c235d72461" CvTextArea="460, 919, 47, 13" CvTextArgument="Efectivo" CvType="Text" DesignTimeRectangle="461, 918, 84, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentname='editingAcAccount' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='editingAcAccount' tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='ng-star-inserted' aaname=' Efectivo ' check:innerText='Efectivo' /&gt;" Guid="2db61c54-83cf-462c-84da-58e366c01d6c" InformativeScreenshot="ec85362e7b0cd7f6441f1b7c73843f8a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic '+Agregar otra'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="fd32e7f3-0d55-4775-8dc4-0f1bebd4e695" CvTextArea="445, 490, 171, 16" CvTextArgument="+Agregar otra forma de pago" CvType="Text" DesignTimeRectangle="447, 466, 625, 62" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='trShowNewRowPay' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='trShowNewRowPay' tag='DIV' type='' class='add-grid item-row ng-star-inserted' aaname='' check:innerText='+Agregar otra forma de pago' /&gt;" Guid="2a0a249f-eca4-4237-9731-4c262c34fea1" InformativeScreenshot="e7379fbd47b7a7b8e592a52b3afba7b1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Guardar y enviar'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="36b628fa-afa2-47ed-86a8-2383c646f205" CvElementArea="1038, 979, 145, 36" CvTextArea="1053, 990, 115, 13" CvTextArgument="Guardar y enviar" CvType="Button" DesignTimeRectangle="1055, 984, 111, 26" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl class='hydrated' idx='3' parentid='div-invoice-page' tag='SIIGO-BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='hydrated' parentid='div-invoice-page' tag='SIIGO-BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='SPAN' type='' class='' aaname='Guardar y enviar' check:innerText='Guardar y enviar' /&gt;" Guid="3ff8608e-bb8e-48b7-917f-bc9303ececa5" InformativeScreenshot="bbd2be9a928cb82fa334a125a911d723.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="36b628fa-afa2-47ed-86a8-2383c646f205" CvElementArea="1038, 979, 145, 36" CvTextArea="1053, 990, 115, 13" CvTextArgument="Guardar y enviar" CvType="Button" DesignTimeRectangle="1040, 981, 141, 32" ElementType="Button" FullSelectorArgument="&lt;webctrl class='hydrated' idx='3' parentid='div-invoice-page' tag='SIIGO-BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl class='hydrated' parentid='div-invoice-page' tag='SIIGO-BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='BUTTON' type='button' class='btn-element size-m' aaname='Guardar y enviar' check:innerText='Guardar y enviar' /&gt;" Guid="cefb1e23-4ae3-46cf-94fd-3a11e1d4ea43" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Guardar y enviar'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="134ff889-6f86-4ffc-b1a8-901457659d92" CvElementArea="998, 674, 144, 36" CvTextArea="1013, 685, 115, 13" CvTextArgument="Guardar y enviar" CvType="Button" DesignTimeRectangle="1015, 679, 111, 26" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='single-spa-application:invoice' tag='SIIGO-DIALOG-MODAL-MOLECULE' /&gt;&lt;webctrl class='hydrated' shadowhostid='' tag='SIIGO-BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='single-spa-application:invoice' tag='SIIGO-DIALOG-MODAL-MOLECULE' /&gt;&lt;webctrl class='hydrated' shadowhostid='' tag='SIIGO-BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='SPAN' type='' class='' aaname='Guardar y enviar' check:innerText='Guardar y enviar' /&gt;" Guid="9a805f35-d2cd-432a-9f8e-74a5391c0ce4" InformativeScreenshot="55e0098307169b4d3deda2f6fabfccaf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="134ff889-6f86-4ffc-b1a8-901457659d92" CvElementArea="998, 674, 144, 36" CvTextArea="1013, 685, 115, 13" CvTextArgument="Guardar y enviar" CvType="Button" DesignTimeRectangle="1000, 676, 141, 32" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='single-spa-application:invoice' tag='SIIGO-DIALOG-MODAL-MOLECULE' /&gt;&lt;webctrl class='hydrated' shadowhostid='' tag='SIIGO-BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='single-spa-application:invoice' tag='SIIGO-DIALOG-MODAL-MOLECULE' /&gt;&lt;webctrl class='hydrated' shadowhostid='' tag='SIIGO-BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='BUTTON' type='button' class='btn-element size-m' aaname='Guardar y enviar' check:innerText='Guardar y enviar' /&gt;" Guid="29d98f50-7a59-4ab6-af0c-9692f214ad9a" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Enviar'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/843/4591" CVScreenId="9cd0a82a-dbce-4f03-b439-9743a149687b" CvElementArea="890, 768, 109, 29" CvTextArea="925, 775, 40, 13" CvTextArgument="Enviar" CvType="Button" DesignTimeRectangle="890, 767, 110, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl src='https://monolithprod.siigo.com/JOSEALEXANDERVARGASCARDENAS001/Default.aspx?TabID=645&amp;amp;PopUpWindow=1&amp;amp;HiddenHeader=1&amp;amp;SendMailType=4&amp;amp;IsAngular=true&amp;amp;DocumentCode=4591&amp;amp;IsNotApproved=false' tag='IFRAME' /&gt;&lt;webctrl tableCol='1' tableRow='2' tag='TABLE' /&gt;&lt;webctrl tableRow='37' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://monolithprod.siigo.com/JOSEALEXANDERVARGASCARDENAS001/Default.aspx?TabID=645&amp;amp;PopUpWindow=1&amp;amp;HiddenHeader=1&amp;amp;SendMailType=4&amp;amp;IsAngular=true&amp;amp;DocumentCode=4591&amp;amp;IsNotApproved=false' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='btnSend' aaname='Enviar' check:text='Enviar' /&gt;" Guid="d937a53e-28a3-4dca-83b9-fe94d19383f6" InformativeScreenshot="f76c2618d8fd613e31ac7197f1db6f08.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'I'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/843/4919" CVScreenId="b2ad844c-597d-464b-bfe6-ecf07d8d3b16" CvElementArea="1282, 385, 20, 20" CvType="CloseButton" DesignTimeRectangle="1287, 389, 10, 14" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='main' tag='SIIGO-PANEL-MODAL-MOLECULE' /&gt;&lt;webctrl shadowhostid='' tag='SIIGO-BUTTON-ICON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='main' tag='SIIGO-PANEL-MODAL-MOLECULE' /&gt;&lt;webctrl shadowhostid='' tag='SIIGO-BUTTON-ICON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='I' type='' class='icon-element fas fa-times' aaname='' /&gt;" Guid="8cdab609-e023-4a7d-9756-797a7164526a" InformativeScreenshot="016d272a43d7e3c830cc3eccbdee26a4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="Icono 'Factura electrónica'" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/843/4596" DesignTimeRectangle="1043, 588, 150, 150" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='QrCode' tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='QrCode' type='' tag='IMG' class='' /&gt;" Guid="acee51a3-ba17-402f-8ad2-d9d9bd70fd45" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJoAAACaCAYAAABR/1EXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAC1uSURBVHhe7Z0HsC1F1YXNCigYMStqqRigzKJixoCKOWdEMGDOCmYxW2IEFUVFxYgBRMqcRTFhQIyYMCJgDqjv/7+G77rvetN35pz37n1onVW16s7evbunz8y+0927e3rOsG6BBdYAC0dbYE2wcLQF1gQLR1tgTbBwtAXWBAtHW2BNsHC0BdYEC0dbYE2wcLQF1gSTHO3f//73uj/84Q8z8x//+MdpJZyKP//5z03/r3/9q8l//OMfl9knUl9tqx5QZqZX/v3vf292f/3rX5t8yimnNLkH84lZZWCd+N2AcyJTh4q//e1vTe/1+stf/rJUHuT6V9Q0KHp60LuHnAtw7qH0MWbdepjkaBR4hjOcYWa+7nWvO62EU3G9612v6b/73e82+bznPe8y+0Tqq+05znGO07Sn4qtf/eqy9OSznvWsZveQhzykye9617ua3MOZz3zmZicsRwzJ5Kn45je/2fQ3utGNmsw5kalDxSMe8Yimf+tb39rkm93sZk2WP/vZz5pe1DQoenrwu9/9br10eLvb3a6lc6+G0seIb0zB8tp0oKOd5SxnWXepS11qlFtttVWz19F+9atfrfvRj3607upXv3rT62hXucpVluXDBorUK1PG2c9+9qb76U9/2mx1tM0226zZXOACF2jylltu2eRXvOIVzW7vvfdu8hvf+Malcoeooyl7bqFc0y9zmcu045/85CfNht+J/u53v3uTDz/88CZTh4pnPOMZTX/AAQe0/He+852bLL/4xS8unQdSL2i6+pqn6uHRRx+9XjrcfffdWx10NO7dkF0SX8B+VRyNE0zBk570pGavo/Ffgyx1tITpidQrw4td7GJNp6PxNAA8HZB5WgyBm1nLGWMPNf2f//xnO77gBS/Y5Flxz3ves+X/8Ic/fJrmVPAbPU+lSFlUW1qPlaCjce+mAF/AflUd7U9/+lP7L0v6n5yO9rjHPW7dta51rSUeeuihzT77SaZbnqAsqJ7jM53pTM32Nre5TbPR0cxPU4l817vetcnHH398sxM62rbbbrt03pXouROUAUn7whe+0GxvectbtjT6P+abwoc+9KEt/5ve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" InformativeScreenshot="8b5592fc18524753b029a773198e9a9b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, Image" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="142b5930-bd20-4f5d-b4ee-94f0194414fe" CvElementArea="1192, 630, 306, 76" CvTextArea="1244, 649, 202, 15" CvTextArgument="Factura electronica de venta" CvType="Button" DesignTimeRectangle="1194, 631, 303, 38" ElementType="Text" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='Pad5' aaname='Factura electrónica de venta' check:innerText='Factura electrónica de venta' /&gt;" Guid="4ae10c14-45f9-42b6-bd47-c9b4adc5063c" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:VerifyExecutionOptions.Target>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Inicio'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/843/4591" DesignTimeRectangle="23, 211, 66, 46" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='SIIGO-MENU-MOLECULE' /&gt;&lt;webctrl css-selector='div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;siigo-menu-button&amp;gt;div&amp;gt;div' shadowhostid='' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SIIGO-MENU-MOLECULE' /&gt;&lt;webctrl type='' shadowhostid='' tag='DIV' class='siigo-menu-button--button principal selected no-border false' aaname='' check:text='Inicio' /&gt;" Guid="d92651f8-534a-4dbe-9f7a-45f130e25545" InformativeScreenshot="ca3f8b6cec9b815bbc8de83464806b42.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'DIV'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/dashboard/1055" DesignTimeRectangle="123, 417, 1785, 333" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='PANEL-ATOM' /&gt;&lt;webctrl class='siigo-panel-body__content' shadowhostid='' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='PANEL-ATOM' /&gt;&lt;webctrl class='siigo-panel-body__content' shadowhostid='' tag='DIV' type='' aaname='' /&gt;" Guid="126ebf09-f7b7-43ff-9a33-2d40d911024f" InformativeScreenshot="d4f4247feb06524aee8dd9fc233c2c3e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RepeatNumberOfTimesX.Body>
+            </ui:RepeatNumberOfTimesX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="caf6d35f00346b48af3d0dfc15265372.jpg" Selector="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" Title="Siigo Nube" Url="https://siigonube.siigo.com/#/invoice/824?TabID=1786" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
