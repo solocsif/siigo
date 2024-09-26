@@ -118,7 +118,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:RepeatNumberOfTimesX DisplayName="Repetir número de veces" sap:VirtualizedContainerService.HintSize="450,3758" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="131" StartAt="1">
+            <ui:RepeatNumberOfTimesX DisplayName="Repetir número de veces" sap:VirtualizedContainerService.HintSize="450,3758" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="2" StartAt="1">
               <ui:RepeatNumberOfTimesX.Body>
                 <ActivityAction x:TypeArguments="x:Int32">
                   <ActivityAction.Argument>
@@ -163,7 +163,7 @@
                         </uix:TargetAnchorable>
                       </uix:NSelectItem.Target>
                     </uix:NSelectItem>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Cliente'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Text="jump" Version="V3">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Cliente'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Text="CML" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="16859e61-d7c6-40c7-817c-8c42bdf8e6b0" CvTextArea="588, 521, 41, 13" CvTextArgument="Buscar" CvType="Text" DesignTimeRectangle="584, 516, 272, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='autocomplete_autocompleteInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='autocomplete_autocompleteInput' tag='INPUT' type='text' class='form-control generic-control-validator read-only-bg' placeholder='Buscar' aaname='' /&gt;" Guid="92b3b8bd-ac71-4d15-82fa-aef486006366" InformativeScreenshot="9f0b6b1dc27f077f040663fa8a45c3cd.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -186,13 +186,7 @@
                     </uix:NTypeInto>
                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'JUMP START SAS'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
                       <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="16859e61-d7c6-40c7-817c-8c42bdf8e6b0" CvElementArea="582, 562, 275, 29" CvType="InputBox" DesignTimeRectangle="592, 562, 110, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='ng-star-inserted' aaname=' JUMP START SAS ' check:innerText='JUMP START SAS' /&gt;" Guid="70f3fb4d-3067-4266-b088-28777f0cc13d" InformativeScreenshot="faf1e5e939495ab430375880517257f6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="16859e61-d7c6-40c7-817c-8c42bdf8e6b0" CvTextArea="482, 568, 68, 14" CvTextArgument="Contacto O" CvType="Text" DesignTimeRectangle="483, 563, 86, 25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;invoice-root&amp;gt;div&amp;gt;div&amp;gt;invoice&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;invoice-header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='5' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col-sm-2 col-form-label span-form-headers' tag='SPAN' aaname='Contacto ' check:innerText='Contacto' /&gt;" Guid="d2e16b74-2880-4709-90da-2ae819311908" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="f95e3944-d78f-4f6a-abbb-1be932b66686" CvTextArea="592, 563, 134, 13" CvTextArgument="CML PLASTICOS SAS" CvType="Text" DesignTimeRectangle="592, 562, 134, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='ng-star-inserted' aaname=' CML PLASTICOS SAS ' check:innerText='CML PLASTICOS SAS' /&gt;" Guid="16aa0aca-9eaa-455d-96b0-90f845fdd374" InformativeScreenshot="b1216ff0ad59fdc4414e75df251887aa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
                       <uix:NClick.VerifyOptions>
                         <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
