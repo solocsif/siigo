@@ -93,37 +93,37 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="608,4365" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="706,4055" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Navegador Chrome: Siigo Nube" sap:VirtualizedContainerService.HintSize="546,4277" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b4332549-0f28-422b-8722-e3e0323a0941" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Navegador Chrome: Siigo Nube" sap:VirtualizedContainerService.HintSize="518,4032" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b4332549-0f28-422b-8722-e3e0323a0941" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="512,4037" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="484,3792" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:RepeatNumberOfTimesX DisplayName="Repetir número de veces" sap:VirtualizedContainerService.HintSize="450,3947" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="30" StartAt="1">
+            <ui:RepeatNumberOfTimesX DisplayName="Repetir número de veces" sap:VirtualizedContainerService.HintSize="450,3703" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="29" StartAt="1">
               <ui:RepeatNumberOfTimesX.Body>
                 <ActivityAction x:TypeArguments="x:Int32">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,3758" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,3539" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'IMG'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'IMG'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/dashboard/1055" CVScreenId="da176292-d123-40b3-917c-7d36ce840b62" CvTextArea="195, 507, 185, 14" CvTextArgument="Crea una Factura Electronica" CvType="Text" DesignTimeRectangle="195, 506, 184, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='single-spa-application:react-dashboard' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='single-spa-application:react-dashboard' tag='P' type='' class='shortcut-title' aaname='Crea una Factura Electrónica' check:innerText='Crea una Factura Electrónica' /&gt;" Guid="6020f5ee-6be2-4e20-985d-0d8ffc2bfb5f" InformativeScreenshot="628630ddb3f82df3fce4fd9910b58247.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
@@ -138,12 +138,12 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NSelectItem DisplayName="Seleccionar elemento 'Tipo Es'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="FV - 2 - FACTURA ELECTRONICA FV 2 ALMACEN" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                    <uix:NSelectItem DisplayName="Seleccionar elemento 'Tipo Es'" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="FV - 2 - Factura electrónica de venta" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
                       <uix:NSelectItem.Items>
                         <scg:List x:TypeArguments="x:String" Capacity="3">
                           <x:String></x:String>
                           <x:String>FV - 1 - Factura de venta No</x:String>
-                          <x:String>FV - 2 - FACTURA ELECTRONICA FV 2 ALMACEN</x:String>
+                          <x:String>FV - 2 - Factura electrónica de venta</x:String>
                         </scg:List>
                       </uix:NSelectItem.Items>
                       <uix:NSelectItem.Target>
@@ -156,7 +156,7 @@
                         </uix:TargetAnchorable>
                       </uix:NSelectItem.Target>
                     </uix:NSelectItem>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Cliente'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Text="mag" Version="V3">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Cliente'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Text="mafer" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="16859e61-d7c6-40c7-817c-8c42bdf8e6b0" CvTextArea="588, 521, 41, 13" CvTextArgument="Buscar" CvType="Text" DesignTimeRectangle="584, 516, 272, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='autocomplete_autocompleteInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='autocomplete_autocompleteInput' tag='INPUT' type='text' class='form-control generic-control-validator read-only-bg' placeholder='Buscar' aaname='' /&gt;" Guid="92b3b8bd-ac71-4d15-82fa-aef486006366" InformativeScreenshot="9f0b6b1dc27f077f040663fa8a45c3cd.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -177,20 +177,9 @@
                         </uix:VerifyExecutionTypeIntoOptions>
                       </uix:NTypeInto.VerifyOptions>
                     </uix:NTypeInto>
-                    <uix:NGetText DisplayName="Obtener texto 'Contacto Persona'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="16859e61-d7c6-40c7-817c-8c42bdf8e6b0" CvElementArea="582, 562, 275, 29" CvType="InputBox" DesignTimeRectangle="592, 562, 157, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='ng-star-inserted' /&gt;" Guid="a2c88035-05b1-4ab1-b59e-9d99ba000f33" InformativeScreenshot="124d1b4b99e21acf970a6e2ce5429df0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="16859e61-d7c6-40c7-817c-8c42bdf8e6b0" CvTextArea="482, 568, 68, 14" CvTextArgument="Contacto O" CvType="Text" DesignTimeRectangle="483, 563, 86, 25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;invoice-root&amp;gt;div&amp;gt;div&amp;gt;invoice&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;invoice-header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='5' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col-sm-2 col-form-label span-form-headers' tag='SPAN' aaname='Contacto ' check:innerText='Contacto' /&gt;" Guid="14dc9be5-6892-4a6c-9e00-4ea36acf4acb" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NGetText.Target>
-                    </uix:NGetText>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'JUMP START SAS'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'JUMP START SAS'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
                       <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="e55fb9d0-9dfb-4116-9db6-755db76f2beb" CvTextArea="592, 563, 157, 13" CvTextArgument="MAGENTA ENVASES SAS" CvType="Text" DesignTimeRectangle="592, 562, 157, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='ng-star-inserted' aaname=' MAGENTA ENVASES SAS ' check:innerText='MAGENTA ENVASES SAS' /&gt;" Guid="00a62545-2af5-4801-80fc-5bb97663578e" InformativeScreenshot="068c4eb0606ca4e4289333f373665e53.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="4693ccbc-e897-4f39-aad6-143466de979a" CvTextArea="389, 485, 94, 10" CvTextArgument="MAFERPLAST SAS" CvType="Text" DesignTimeRectangle="391, 484, 92, 15" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='ng-star-inserted' aaname=' MAFERPLAST SAS ' check:innerText='MAFERPLAST SAS' /&gt;" Guid="982064cb-14f9-423b-81ff-a8302ae9d0ae" InformativeScreenshot="641bba9c85a553f382a5d524193756e8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
                       <uix:NClick.VerifyOptions>
                         <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -203,7 +192,7 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Etiqueta'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Text="bulto" Version="V3">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Etiqueta'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Text="pp" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="986b59c0-5b31-43f8-b883-5262e98cb16d" CvTextArea="478, 702, 42, 13" CvTextArgument="Buscar" CvType="Text" DesignTimeRectangle="475, 697, 181, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;invoice-root&amp;gt;div&amp;gt;div&amp;gt;invoice&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;invoice-grid&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;siigo-autocomplete&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' id='autocomplete_autocompleteInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' id='autocomplete_autocompleteInput' tag='INPUT' class='form-control generic-control-validator read-only-bg' placeholder='Buscar' aaname='' /&gt;" Guid="2b084e97-3e71-4535-a1d3-919e5f769037" InformativeScreenshot="bb5a232f402469ac7b5ed31121c450dc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -224,9 +213,9 @@
                         </uix:VerifyExecutionTypeIntoOptions>
                       </uix:NTypeInto.VerifyOptions>
                     </uix:NTypeInto>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Retal Lamina'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Retal Lamina'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
                       <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="4b4ed331-71cd-4046-8093-802593edce51" CvTextArea="539, 788, 102, 13" CvTextArgument="bulto por 25 Kilos" CvType="Text" DesignTimeRectangle="539, 787, 101, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Código Descripción Referencia de fábrica Estado' tag='TABLE' /&gt;&lt;webctrl aaname=' bulto por 25 Kilos ' tableRow='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Código Descripción Referencia de fábrica Estado' tag='TABLE' /&gt;&lt;webctrl aaname=' bulto por 25 Kilos ' type='' tag='DIV' class='ng-star-inserted' check:innerText='bulto por 25 Kilos' /&gt;" Guid="942525e0-630c-4b6c-b0a0-cb2996b924bd" InformativeScreenshot="d10a7aa4640230454f083438d6111c21.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="a629a3e2-a877-4c52-8bb2-31d2906afca1" CvTextArea="851, 409, 37, 13" CvTextArgument="Activo" CvType="Text" DesignTimeRectangle="852, 408, 37, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Código Descripción Referencia de fábrica Estado' tag='TABLE' /&gt;&lt;webctrl aaname='Activo' tableRow='3' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Código Descripción Referencia de fábrica Estado' tag='TABLE' /&gt;&lt;webctrl aaname='Activo' type='' tag='DIV' class='ng-star-inserted' check:innerText='Activo' /&gt;" Guid="2751289b-1cfb-495f-af5d-852ec07ec2f3" InformativeScreenshot="2d7113f6363d1b813a26c6d3d2462109.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
                       <uix:NClick.VerifyOptions>
                         <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -239,12 +228,12 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en '1.00'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Text="4" Version="V3">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en '1.00'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Text="540" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="986b59c0-5b31-43f8-b883-5262e98cb16d" CvElementArea="848, 694, 70, 30" CvType="InputBox" DesignTimeRectangle="852, 696, 63, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='inputDecimal_siigoInputDecimal' parentid='editQuantity' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputDecimal_siigoInputDecimal' parentid='editQuantity' tag='INPUT' type='text' class='generic-control-validator input-right dx-texteditor-input' aaname='' /&gt;" Guid="80c78e2a-41c4-4651-a258-6f3bb5e5e2b8" InformativeScreenshot="b42be0f12cfd3c6ac9c220f5d0b22fd8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                       </uix:NTypeInto.Target>
                     </uix:NTypeInto>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'I'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'I'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="79658796-1fc2-401f-8286-dca8784728f0" CvElementArea="451, 864, 193, 29" CvType="InputBox" DesignTimeRectangle="453, 866, 190, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='editingAcAccount_autocompleteInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='editingAcAccount_autocompleteInput' tag='INPUT' type='text' class='form-control generic-control-validator read-only-bg' placeholder='Selecciona forma de pago' aaname='' /&gt;" Guid="8f8088d8-fc51-4f4b-9ecd-f45060e68d20" InformativeScreenshot="280dfd5dd84669b5c4cf67d508dff937.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -265,7 +254,7 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'I'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'I'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="7877f761-34c4-466f-a290-a7c235d72461" CvTextArea="460, 919, 47, 13" CvTextArgument="Efectivo" CvType="Text" DesignTimeRectangle="461, 918, 84, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentname='editingAcAccount' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='editingAcAccount' tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='ng-star-inserted' aaname=' Efectivo ' check:innerText='Efectivo' /&gt;" Guid="2db61c54-83cf-462c-84da-58e366c01d6c" InformativeScreenshot="ec85362e7b0cd7f6441f1b7c73843f8a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
@@ -280,7 +269,7 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic '+Agregar otra'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic '+Agregar otra'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="fd32e7f3-0d55-4775-8dc4-0f1bebd4e695" CvTextArea="445, 490, 171, 16" CvTextArgument="+Agregar otra forma de pago" CvType="Text" DesignTimeRectangle="447, 466, 625, 62" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='trShowNewRowPay' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='trShowNewRowPay' tag='DIV' type='' class='add-grid item-row ng-star-inserted' aaname='' check:innerText='+Agregar otra forma de pago' /&gt;" Guid="2a0a249f-eca4-4237-9731-4c262c34fea1" InformativeScreenshot="e7379fbd47b7a7b8e592a52b3afba7b1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
@@ -295,7 +284,7 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Guardar y enviar'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Guardar y enviar'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="36b628fa-afa2-47ed-86a8-2383c646f205" CvElementArea="1038, 979, 145, 36" CvTextArea="1053, 990, 115, 13" CvTextArgument="Guardar y enviar" CvType="Button" DesignTimeRectangle="1055, 984, 111, 26" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl class='hydrated' idx='3' parentid='div-invoice-page' tag='SIIGO-BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='hydrated' parentid='div-invoice-page' tag='SIIGO-BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='SPAN' type='' class='' aaname='Guardar y enviar' check:innerText='Guardar y enviar' /&gt;" Guid="3ff8608e-bb8e-48b7-917f-bc9303ececa5" InformativeScreenshot="bbd2be9a928cb82fa334a125a911d723.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -316,7 +305,7 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Guardar y enviar'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Guardar y enviar'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/824?TabID=1786" CVScreenId="134ff889-6f86-4ffc-b1a8-901457659d92" CvElementArea="998, 674, 144, 36" CvTextArea="1013, 685, 115, 13" CvTextArgument="Guardar y enviar" CvType="Button" DesignTimeRectangle="1015, 679, 111, 26" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='single-spa-application:invoice' tag='SIIGO-DIALOG-MODAL-MOLECULE' /&gt;&lt;webctrl class='hydrated' shadowhostid='' tag='SIIGO-BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='single-spa-application:invoice' tag='SIIGO-DIALOG-MODAL-MOLECULE' /&gt;&lt;webctrl class='hydrated' shadowhostid='' tag='SIIGO-BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='SPAN' type='' class='' aaname='Guardar y enviar' check:innerText='Guardar y enviar' /&gt;" Guid="9a805f35-d2cd-432a-9f8e-74a5391c0ce4" InformativeScreenshot="55e0098307169b4d3deda2f6fabfccaf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -337,9 +326,15 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Enviar'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Enviar'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
                       <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/843/4591" CVScreenId="9cd0a82a-dbce-4f03-b439-9743a149687b" CvElementArea="890, 768, 109, 29" CvTextArea="925, 775, 40, 13" CvTextArgument="Enviar" CvType="Button" DesignTimeRectangle="890, 767, 110, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl src='https://monolithprod.siigo.com/JOSEALEXANDERVARGASCARDENAS001/Default.aspx?TabID=645&amp;amp;PopUpWindow=1&amp;amp;HiddenHeader=1&amp;amp;SendMailType=4&amp;amp;IsAngular=true&amp;amp;DocumentCode=4591&amp;amp;IsNotApproved=false' tag='IFRAME' /&gt;&lt;webctrl tableCol='1' tableRow='2' tag='TABLE' /&gt;&lt;webctrl tableRow='37' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://monolithprod.siigo.com/JOSEALEXANDERVARGASCARDENAS001/Default.aspx?TabID=645&amp;amp;PopUpWindow=1&amp;amp;HiddenHeader=1&amp;amp;SendMailType=4&amp;amp;IsAngular=true&amp;amp;DocumentCode=4591&amp;amp;IsNotApproved=false' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='btnSend' aaname='Enviar' check:text='Enviar' /&gt;" Guid="d937a53e-28a3-4dca-83b9-fe94d19383f6" InformativeScreenshot="f76c2618d8fd613e31ac7197f1db6f08.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/843/7060" CVScreenId="c2ddefb9-a021-4dbc-8966-9f8b986088d2" CvElementArea="1208, 819, 74, 35" CvTextArea="1223, 829, 44, 13" CvTextArgument="Enviar" CvType="Button" DesignTimeRectangle="1225, 824, 40, 26" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;invoice-root&amp;gt;div&amp;gt;app-email-composer-parcel&amp;gt;div&amp;gt;parcel&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button-atom' idx='3' tag='BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='SPAN' type='' class='' aaname='Enviar' check:innerText='Enviar' /&gt;" Guid="7c5a6c44-42bb-4f9e-9493-da40d42daaf7" InformativeScreenshot="d601b0dfc95284362e7ae3d7dd8c42ce.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="c2ddefb9-a021-4dbc-8966-9f8b986088d2" CvElementArea="1208, 819, 74, 35" CvTextArea="1223, 829, 44, 13" CvTextArgument="Enviar" CvType="Button" DesignTimeRectangle="1210, 821, 70, 32" ElementType="Button" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;invoice-root&amp;gt;div&amp;gt;app-email-composer-parcel&amp;gt;div&amp;gt;parcel&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button-atom' idx='3' tag='BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON-ATOM' /&gt;&lt;webctrl shadowhostid='' tag='BUTTON' type='button' class='btn-element size-m' aaname='Enviar' check:innerText='Enviar' /&gt;" Guid="22529898-f724-4b62-8bef-737c5c27e0ad" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
                       </uix:NClick.Target>
                       <uix:NClick.VerifyOptions>
                         <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -352,7 +347,7 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Inicio'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Inicio'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/invoice/843/4591" DesignTimeRectangle="23, 211, 66, 46" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='SIIGO-MENU-MOLECULE' /&gt;&lt;webctrl css-selector='div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;siigo-menu-button&amp;gt;div&amp;gt;div' shadowhostid='' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SIIGO-MENU-MOLECULE' /&gt;&lt;webctrl type='' shadowhostid='' tag='DIV' class='siigo-menu-button--button principal selected no-border false' aaname='' check:text='Inicio' /&gt;" Guid="d92651f8-534a-4dbe-9f7a-45f130e25545" InformativeScreenshot="ca3f8b6cec9b815bbc8de83464806b42.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
@@ -367,7 +362,7 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'DIV'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'DIV'" sap:VirtualizedContainerService.HintSize="382,218" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4332549-0f28-422b-8722-e3e0323a0941" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/dashboard/1055" DesignTimeRectangle="123, 417, 1785, 333" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='PANEL-ATOM' /&gt;&lt;webctrl class='siigo-panel-body__content' shadowhostid='' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='PANEL-ATOM' /&gt;&lt;webctrl class='siigo-panel-body__content' shadowhostid='' tag='DIV' type='' aaname='' /&gt;" Guid="126ebf09-f7b7-43ff-9a33-2d40d911024f" InformativeScreenshot="d4f4247feb06524aee8dd9fc233c2c3e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
